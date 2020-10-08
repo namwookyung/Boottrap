@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>자바스크립트 예제</title>
+<style>
+	div.out {
+		width:400px;
+		height:400px;
+		background-color:yellow;
+	}
+	
+	.inner {
+		width:200px;
+		height:200px;
+		background-color:pink;
+	}
+</style>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+	<div class = "out">
+		<div class = "inner">마우스 이벤트</div>
+	</div>
+	<script>
+		$(function(){ /* (document).ready - 생략가능 */
+			$("div.out").mouseout(function() {
+				$(".inner").text("mouse out");
+			});
+			$("div.out").mouseleave(function() {
+				$(".inner").text("mouse leave");
+			});
+			$("div.out").mouseenter(function() {
+				$(".inner").text("mouse enter");
+			});
+			$("div.out").mousedown(function() {
+				$(".inner").text("mouse down");
+			});
+			$("div.out").mouseup(function() {
+				$(".inner").text("mouse up");
+			});
+		});
+	</script>
+</head>
+<body>
+
+</body>
+</html>
