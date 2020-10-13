@@ -1,0 +1,80 @@
+body {
+	margin:20px;
+	padding:20px;
+	font-size:1rem;
+	background:#555;
+}
+
+h1 {
+	font-size:1.5rem;
+	font-weight:600;
+	color:#000;
+}
+
+.control {
+	position:absolute;
+	left:50px;
+	top:100px;
+	width:200px;
+	height:210px;
+	border:3px double rgba(0, 0, 0, .1);
+}
+
+.control>.up, .control>.down {
+	margin:0 auto;
+	width:200px;
+	height:30px;
+	background:#444;
+}
+
+.control>.up:hover, .control>.down:hover {
+	background:#333;
+}
+
+.control>.up>a, .control>.down>a {
+	display:block;
+	line-height:30px;
+	text-align:center;
+	text-decoration:none;
+	font-weight:700;
+	color:#8ac007;
+}
+
+.photoList {
+	position:relative;
+	overflow:hidden;
+	width:200px;
+	height:152px;
+}
+
+.photoList>ul {
+	position:absolute;
+}
+
+.photoList>ul>li>a {
+	display:block;
+	width:200px;
+	height:50px;
+	line-height:50px;
+	text-align:center;
+	text-decoration:none;
+	font-size:0.87rem;
+	background:rgba(0, 0, 0, 0);
+	color:#000;
+	border-bottom:1px solid rgba(0, 0, 0, .1);
+	transition:all 0.4s;
+}
+
+.photoList>ul>li>a.on {
+	background:rgba(0,0, 0, .1);
+	color:#f1f1f1;
+}
+
+.picture {
+	position:absolute;
+	left:300px;
+	top:100px;
+	width:320px;
+	height:213px;
+	border:2px solid rbga(255, 255, 255, .1);
+}
